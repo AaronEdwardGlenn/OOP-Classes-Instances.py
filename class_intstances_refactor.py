@@ -9,7 +9,7 @@ class Employee:
         self.pay = pay
         self.email = first + '.' + last + '@company.com'
 
-    def fullname(self):  # forgeting self here will error "takes 0 positional arguments but 1 was given"
+    def fullname(self):  # forgeting self here will error "takes 0 positional arguments but 1 was given". this is because the instance method 'emp_1' is being added automatically. so we need to add self to avoid this.
         return('{}, {}'.format(self.first, self.last))
 
 
