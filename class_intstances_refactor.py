@@ -9,7 +9,7 @@ class Employee:
         self.pay = pay
         self.email = first + '.' + last + '@company.com'
 
-    def fullname(self):
+    def fullname(self):  # forgeting self here will error "takes 0 positional arguments but 1 was given"
         return('{}, {}'.format(self.first, self.last))
 
 
